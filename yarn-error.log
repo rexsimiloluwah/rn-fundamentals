@@ -1,0 +1,36 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add global expo-cli=3.28.6
+
+PATH: 
+  C:\Users\IT\Anaconda3;C:\Users\IT\Anaconda3\Library\mingw-w64\bin;C:\Users\IT\Anaconda3\Library\usr\bin;C:\Users\IT\Anaconda3\Library\bin;C:\Users\IT\Anaconda3\Scripts;C:\Users\IT\Anaconda3\bin;C:\Users\IT\Anaconda3\condabin;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64\compiler;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\MATLAB\R2018a\runtime\win64;C:\Program Files\MATLAB\R2018a\bin;C:\Program Files\Tesseract-OCR;C:\Program Files (x86)\Yarn\bin;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\MinGW\bin;C:\HashiCorp\Vagrant\bin;C:\Users\IT\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\IT\AppData\Local\Programs\Python\Python37;C:\Users\IT\AppData\Local\Microsoft\WindowsApps;C:\Program Files\heroku\bin;C:\intelFPGA_lite\18.1\modelsim_ase\win32aloem;C:\Users\IT\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\IT\AppData\Local\Yarn\bin;C:\Users\IT\AppData\Roaming\npm;.
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.18.4
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/expo-cli=3.28.6: Not found
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:66096:18)
+      at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1220:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

@@ -2,7 +2,7 @@
  * @author [Similoluwa Okunowo (The Caveman)]
  * @email [rexsimiloluwa@gmail.com]
  * @create date 2020-12-30 00:15:37
- * @modify date 2020-12-30 01:23:40
+ * @modify date 2020-12-30 01:32:44
  * @desc [description]
  */
 import { StatusBar } from 'expo-status-bar';
