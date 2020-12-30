@@ -1,9 +1,17 @@
+/**
+ * @author [Similoluwa Okunowo (The Caveman)]
+ * @email [rexsimiloluwa@gmail.com]
+ * @create date 2020-12-30 00:15:37
+ * @modify date 2020-12-30 01:23:40
+ * @desc [description]
+ */
 import { StatusBar } from 'expo-status-bar';
 import React, {useState} from 'react';
 import { StyleSheet,View, Alert, TouchableWithoutFeedback, Keyboard} from 'react-native';
 import Header from './components/Header';
 import TodoItems from './components/TodoItems';
 import TodoForm from './components/TodoForm';
+import FlexBox from './components/FlexBox';
 
 export default function App() {
 
@@ -85,8 +93,6 @@ export default function App() {
         Keyboard.dismiss()
       }}
     >
-    <View>
-      
       {/* <Text>React Native Starter.</Text>
       <View style = {styles.main}>
         <Text>Hello World !</Text>
@@ -146,28 +152,29 @@ export default function App() {
       /> */}
 
       {/* Building a Todo app */}
-
+      <View  style = {styles.container}>
       {/* Header */}
       <Header headerText = "Todo app" />
-      <View style = {styles.container}>
-        {/* Todo Form */}
+      <View style = {styles.content}>
         <TodoForm addTodo = {handleAddTodo} />
-        {/* Todo List */}
-        <TodoItems todos = {todos} handleDeleteTodo = {handleDeleteTodo} />
+        <View style = {styles.todolist}>
+          <TodoItems todos = {todos} handleDeleteTodo = {handleDeleteTodo} />
+        </View>
         <StatusBar style="auto" />
       </View>
-    </View>
+      </View>
     </TouchableWithoutFeedback>
+
+    // <Flexbox />
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     // display: 'flex',
-    // flex: 1,
+    flex: 1,
     paddingTop: 20,
     paddingHorizontal: 10,
-    backgroundColor: '#FFF',
     // alignItems: 'center',
     // justifyContent: 'center',
   },
@@ -210,5 +217,14 @@ const styles = StyleSheet.create({
 
   priceText : {
     color: '#fff'
+  },
+
+  content : {
+    flex: 1,
+  },
+
+  todolist : {
+    flex: 1
   }
+
 });
